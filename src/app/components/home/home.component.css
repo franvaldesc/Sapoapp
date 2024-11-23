@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .menu-header {
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    padding: 20px 10px;
+  }
+  
+  .menu-title {
+    font-size: 1.8em;
+    margin: 10px 0;
+  }
+  
+  .menu-subtitle {
+    font-size: 1em;
+    color: #ccc;
+  }
+  
+  .section-title {
+    font-size: 1.5em;
+    margin: 20px 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .accordion {
+    margin: 20px;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .dish-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .dish-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .dish-info {
+    margin-left: 10px;
+  }
+  
+  .dish-name {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .dish-price {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .dish-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+    margin: 10px 0;
+  }
+  
+  .dish-info {
+    margin-left: 10px;
+    flex-grow: 1; /* Permite que la información ocupe el espacio restante */
+  }
+  
+  .btn-order-inline {
+    background-color: #ff7700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-order-inline:hover {
+    background-color: #0056b3;
+  }
+  
+  .dish-price {
+    margin-right: 15px; /* Espacio entre el precio y el botón */
+  }
+  .btn-logout {
+    padding: 10px 20px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .btn-logout:hover {
+    background-color: #d9363e;
+  }

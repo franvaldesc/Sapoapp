@@ -1,0 +1,39 @@
+.sapo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .color-boton {
+    background-color: beige;
+    display: flex;
+    justify-content: center;  /* Centra el botón horizontalmente */
+    position: fixed;          /* Fija el botón al fondo */
+    bottom: 20px;             /* Ajusta la distancia desde el fondo de la pantalla */
+    left: 50%;                /* Centra el botón en la pantalla */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 35px; 
+  }
+  
+  .texto {
+    font-size: 20px; 
+    text-align: center;
+  }
+  
+  .boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:lightskyblue;  /* Ajusta el color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }

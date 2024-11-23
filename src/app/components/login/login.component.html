@@ -1,0 +1,57 @@
+
+<div class="flex justify-content-center align-items-center min-h-screen">
+  <p-card header="Login" [style]="{ width: '400px' }">
+    <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+      <div class="field">
+        <img class="logo" src="https://img.freepik.com/premium-vector/cute-chef-frog-holding-spatula-cartoon-animal-job-concept-isolated-illustration-flat-style_451085-632.jpg">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          pInputText
+          [(ngModel)]="login.email"
+          class="w-full"
+          id="email"
+          name="email"
+          #email="ngModel"
+          required
+          pattern="[a-z0-9\._%\+\-]+@[a-z0-9\.\-]+\.[a-z]{2,}$"
+        />
+        @if(email.invalid && (email.dirty || email.touched)){
+        <small class="block p-error">
+          @if(email.hasError('required')) {
+          <span>Se necesita un email</span>
+          } @else if(email.hasError('pattern')) {
+          <span>El email es invalido</span>
+          }
+        </small>
+        }
+      </div>
+      <div class="field">
+        <label for="password">Contraseña</label>
+        <p-password
+          [(ngModel)]="login.password"
+          [feedback]="false"
+          [toggleMask]="true"
+          inputId="password"
+          name="password"
+          #password="ngModel"
+          inputStyleClass="w-full"
+          styleClass="w-full"
+          required
+        />
+        @if(password.invalid && (password.dirty || password.touched)) {
+        <small class="block p-error"> Se necesita contraseña</small>
+        }
+      </div>
+      <p-button
+        label="ENTRAR"
+        styleClass="w-full"
+        [disabled]="loginForm.invalid"
+        type="submit"
+      ></p-button>
+      <div class="mt-2">
+        No eres un sapo? <a routerLink="/register">Registrate</a>
+      </div>
+    </form>
+  </p-card>
+</div>
