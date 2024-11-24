@@ -13,6 +13,12 @@
       "email": "test@example.com",
       "password": "user123",
       "role": "user"
-    } 
+    },
+    {
+      "id": "3696",
+      "fullName": "Francisco",
+      "email": "fran.valdesc@duocuc.cl",
+      "password": "1234"
+    }
   ]
 }

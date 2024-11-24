@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Sapoapp</string>
+    <string name="title_activity_main">Sapoapp</string>
+    <string name="package_name">com.sapo.app</string>
+    <string name="custom_url_scheme">com.sapo.app</string>
+</resources>
